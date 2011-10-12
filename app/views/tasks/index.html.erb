@@ -1,4 +1,5 @@
 
+<%= text_field 'text','field' %>
 <%= form_for @task do |form| %>
     <ul>
         <li><%= form.label :name %><%= form.text_field :name %></li>
@@ -6,6 +7,7 @@
         <li><%= form.submit %></li>
     </ul>
 <% end %>
+
 
 <table class="tasks">
     <col class="name" />
