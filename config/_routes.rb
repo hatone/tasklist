@@ -1,5 +1,6 @@
 Tasklists::Application.routes.draw do
-  resources :tasks, :only => [ :index,:create ]
+match '/tasks' => 'tasks#index', :as => 'tasks_index'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

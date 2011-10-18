@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20111011115826) do
   create_table "tasks", :force => true do |t|
     t.string   "name"
     t.date     "due_date"
-    t.boolean  "done"
+    t.boolean  "done",       :default => false, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
